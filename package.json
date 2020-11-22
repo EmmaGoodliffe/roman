@@ -4,7 +4,7 @@
   "description": "Roman numeral generator",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint \"**/*.ts\" --fix && prettier \"**\" --write"
+    "lint": "eslint \".\" --fix && prettier \".\" --write"
   },
   "repository": {
     "type": "git",
