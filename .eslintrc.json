@@ -42,5 +42,3 @@
     ]
   }
 }
-
-// npm i -D eslint eslint-plugin-import prettier eslint-plugin-prettier typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
