@@ -4,7 +4,11 @@
   "description": "Roman numeral generator",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint \".\" --fix && prettier \".\" --write"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "lint": "eslint \".\" --fix && prettier \".\" --write",
+    "start": "echo \"Empty start script\"",
+    "validate": "svelte-check"
   },
   "repository": {
     "type": "git",
@@ -17,12 +21,24 @@
   },
   "homepage": "https://github.com/EmmaGoodliffe/roman#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
-    "eslint": "^7.14.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",
+    "eslint": "^7.14.0",
     "prettier": "^2.2.0",
-    "typescript": "^4.1.2"
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^6.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "rollup": "^2.3.4",
+    "svelte": "^3.0.0",
+    "typescript": "^3.9.3",
+    "svelte-check": "^1.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "@rollup/plugin-typescript": "^6.0.0",
+    "tslib": "^2.0.0",
+    "@tsconfig/svelte": "^1.0.0"
   }
 }
